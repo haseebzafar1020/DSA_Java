@@ -1,3 +1,6 @@
+
+// Array num ko plus karo jo target ka baraber hu us ko print karoo 
+
 public class Arr_q7 {
     public static void main(String[] args) {
         int[] arr = { 2,-3,-5, 6, 8 , 5};

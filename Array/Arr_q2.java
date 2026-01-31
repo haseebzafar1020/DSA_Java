@@ -6,7 +6,7 @@ public class Arr_q2 {
         int sum_arry = 1;
         for(int i=0; i<5 ; i++){
             if (arr[i] > 0) {
-                sum_arry *= arr[i];    
+                sum_arry += arr[i];    
             }    
     }
     System.out.print(sum_arry);

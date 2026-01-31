@@ -12,22 +12,26 @@
 // Explanation: The sum of elements from 2nd to 4th position is 12.
 public class Arr_q11 {
 public static void main(String[] args) {
-    int[] arr = {1,2,3,7,5};
+    int[] arr = {1,2,3,7,5,7};
     int target  = 12;
     int  n = arr.length;
-       int sum = 0;
        
-      
-    for ( int i = 0; i<n ; i++ ){
-        for ( int j = 1;j<n; j++){
-            sum = arr[i]+arr[j];
-             if (sum == target ){ 
-            System.out.println("the index:" + i + " and index:"+ j + " sum is = " + sum );
+       int a = 0;
+       int b = 0;
+         
+
+    for (int  i = 0; i<n ; i++ ){
+        for ( int j = 1 ;j<n; j++){
+             if (arr[i]+arr[j] == target ){ 
+                a = j;
+                b = i;
             }
-        }
-        
+            
+        }   
+    
     }
-  
+    
+  System.out.println(a +" " +b);
 
     }
 
